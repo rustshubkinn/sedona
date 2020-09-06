@@ -1,0 +1,46 @@
+header
+  background-color: #ffffff
+  margin: 0 auto
+  ul
+    margin: 0
+    padding: 0
+    list-style-type: none
+    display: flex
+    justify-content: space-around
+    align-items: center
+    font-size: 14px
+    line-height: 24px
+    text-transform: uppercase
+    font-weight: bold
+    position: relative
+  li
+    padding: 16px 0
+    a 
+      text-decoration: none
+      color: #000000
+  .logo
+    position: absolute
+    top: 0
+
+@media ( max-width: 800px )
+  header
+    ul
+      li:nth-child(3)
+        width: 100px
+
+@media ( max-width: 650px )
+  header
+    ul
+      flex-direction: column
+      li
+        width: 100%
+        text-align: center
+        border-bottom: 1px solid #cecece
+        &:first-child
+          margin-top: 50px
+        &:nth-child(3)
+          padding: 0
+          border: none
+      img
+        width: 100px
+  

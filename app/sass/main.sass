@@ -1,34 +1,36 @@
 
 body 
-  margin: 0
-  padding: 0
   font-family: "PTSans", sans-serif
-
-.container
-  width: 1056px
+  max-width: 1200px
   margin: 0 auto
 
-header
-  background-color: #ffffff
-ul
-  margin: 0
-  padding: 0
-  list-style-type: none
-  display: flex
-  justify-content: space-between
-  align-items: center
-  font-size: 14px
-  line-height: 24px
-  text-transform: uppercase
-  font-weight: bold
-  position: relative
-  li
-    padding: 16px 0
-    img 
-      position: absolute
-      top: 0
-      left: 45%
-    a 
-      text-decoration: none
-      color: #000000
+@mixin font($fname, $fstyle, $fweight, $furl)
+  @font-face
+    font-family: $fname
+    font-style: $fstyle
+    font-weight: $fweight
+    src: local($fname), url($furl) format('woff2')
 
+@include font('PTSans', normal, 400, '../fonts/src/PTSans-Regular.ttf')
+@include font('PTSans', italic, 400, '../fonts/src/PTSans-Italic.ttf')
+@include font('PTSans', normal, 700, '../fonts/src/PTSans-Bold.ttf')
+@include font('PTSans', italic, 700, '../fonts/src/PTSans-BoldItalic.ttf')
+
+img 
+  width: 100%
+
+// .container
+//   width: 1056px
+//   margin: 0 auto
+
+// main
+//   p 
+//     text-align: center
+//   img 
+//     width: 100%
+
+@import header.sass
+@import features.sass
+
+
+// ty loh
