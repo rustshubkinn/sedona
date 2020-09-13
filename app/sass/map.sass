@@ -1,0 +1,115 @@
+section.map
+  text-align: center
+  p 
+    text-transform: uppercase
+    margin: 50px 0
+    &:first-child
+      font-size: 30px
+      line-height: 36px
+      font-weight: 700
+    &:last-child
+      color: #333333
+      font-size: 14px
+      line-height: 24px
+  > button 
+    border: none
+    background-color: #766357
+    text-decoration: none
+    color: #ffffff
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 21px
+    line-height: 26px
+    padding: 30px 121px
+    &:hover
+      background-color: #604e43
+    &:active
+      background-color: #503e33
+
+  .modal
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background-color: #ffffff
+    border: none
+    min-height: 396px
+    max-width: 576px
+    margin: 0 auto
+    padding: 55px
+    position: relative
+    bottom: 5px
+    z-index: 5
+    div
+      display: flex
+      justify-content: space-between
+      align-items: center
+      text-align: start
+      text-transform: uppercase
+      font-weight: 700
+      font-size: 14px
+      width: 100%
+      label
+        min-width: 100px
+        margin-right: 20px
+      input
+        font-family: "PTSans", sans-serif
+        text-align: start
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+        background-color: #f2f2f2
+        border: none
+        width: 100%
+        padding: 10px
+        &::-webkit-calendar-picker-indicator
+          display: none
+      input#adults,
+      input#children
+        text-align: center
+      .children
+        text-align: center
+      button
+        font-size: 18px
+        font-weight: 700
+        color: #c1c1c1
+        border: none
+        background-color: #f2f2f2
+        padding: 9.5px 14px
+      svg
+        position: absolute
+        right: 70px
+        opacity: 0.5
+    button
+      background-color: #81b3d2
+      padding: 18px
+      font-size: 21px
+      text-transform: uppercase
+      color: #ffffff  
+      font-weight: 600
+      border: none
+        
+  img 
+    position: relative
+    z-index: 0
+    bottom: 400px
+    margin-bottom: -400px
+    
+@media ( max-width: 580px )
+  .passengers
+    display: flex
+    flex-direction: column
+    max-width: 70%
+    div
+      &:not(:last-child)
+        padding-bottom: 15px
+
+@media ( max-width: 440px )
+  .passengers
+    max-width: 100%
+
+        
+      
+  
+  
+      
+
