@@ -3,6 +3,7 @@ section.map
   p 
     text-transform: uppercase
     margin: 50px 0
+    padding: 0 20px
     &:first-child
       font-size: 30px
       line-height: 36px
@@ -11,7 +12,7 @@ section.map
       color: #333333
       font-size: 14px
       line-height: 24px
-  > button 
+  .search-btn
     border: none
     background-color: #766357
     text-decoration: none
@@ -90,9 +91,7 @@ section.map
         
   img 
     position: relative
-    z-index: 0
-    bottom: 400px
-    margin-bottom: -400px
+    margin-top: -400px
     
 @media ( max-width: 580px )
   .passengers
@@ -106,7 +105,14 @@ section.map
 @media ( max-width: 440px )
   .passengers
     max-width: 100%
-
+  section.map
+    .search-btn
+      padding: 25px 25px
+    .modal
+      padding: 20px
+      div
+        svg
+          right: 30px
         
       
   

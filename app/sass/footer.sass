@@ -4,12 +4,14 @@ footer
   align-items: center
   line-height: 26px
   text-transform: uppercase
+  padding: 36px 0
   div
     &:first-child
       p 
         font-size: 21px
         line-height: 26px
         font-weight: 700
+        margin: 0
     ul
       display: flex
       list-style: none 
@@ -40,3 +42,11 @@ footer
         width: 115px
         height: 40px
       
+@media  ( max-width: 650px )
+  footer
+    flex-direction: column
+    padding: 30px 10px
+    div
+      &:not(:last-child)
+        margin-bottom: 25px
+        
