@@ -1,0 +1,211 @@
+.form
+  background-image: url("../images/dest/filter-background.jpg")
+  background-repeat: no-repeat
+  box-sizing: border-box
+  .container
+    max-width: 1056px
+    margin: 0 auto
+    .form-flex
+      display: flex
+      justify-content: space-between
+      color: #ffffff
+      font-size: 16px
+      line-height: 21px
+      text-transform: uppercase
+      font-weight: 700
+      max-width: 100%
+      label
+        font-weight: 400
+      ul 
+        list-style-type: none
+        padding: 0
+        &:not(:last-child)
+          margin-right: 100px
+        li
+          margin: 11px 0
+      .infrastructure
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+      .roomtype
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+      .range
+        display: flex
+        flex-direction: column
+        justify-content: center
+        label
+          margin-bottom: 20px
+
+.container
+  max-width: 1056px
+  margin: 0 auto
+  .sort
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px #eeeeee solid
+    padding: 30px 0
+    div
+      p
+        font-size: 16px
+        line-height: 21px
+        text-transform: uppercase
+        color: #000000
+        margin: 0
+        margin-right: 32px
+        padding: 0
+        &:first-child
+          font-size: 21px
+          font-weight: 700
+      ul 
+        display: flex
+        justify-content: space-between
+        list-style-type: none
+        text-transform: uppercase
+        padding: 0
+        align-items: center
+        li
+          color: #cacaca
+          border-bottom: 1px dashed #cacaca
+          &:not(:last-child)
+            margin-right: 32px   
+          a
+            text-decoration: none
+            color: #cacaca
+    .sort-arrows
+      display: flex
+      align-items: center
+      svg
+        opacity: 0.5
+        &:first-child
+          margin-right: 13px
+
+  section.catalog 
+    h2
+      margin: 0
+      font-size: 21px
+      text-transform: uppercase
+    p 
+      margin: 0
+      text-transform: uppercase
+      font-size: 14px
+      color: #4e4e4e
+      margin: 9px 0
+
+    .catalog-items
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      .catalog-item
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        border-bottom: 1px #eeeeee solid
+        padding: 30px 0
+
+        .left
+          display: flex
+          .text
+            flex-direction: column
+            min-width: 261px
+            margin-left: 31px
+            align-items: start
+            .btns
+              display: flex
+              flex-direction: row
+              margin: 0
+
+        .right
+          div
+            display: flex
+          &:first-child
+            justify-content: space-between
+          &:last-child
+            flex-direction: column
+          .stars
+            justify-content: flex-end
+            margin-bottom: 40px
+            padding-top: 5px
+          p 
+            text-align: end
+            background-color: #f2f2f2
+            padding: 6px 17px
+            
+      button
+        color: #ffffff
+        padding: 7px 17px
+        border: none
+        text-transform: uppercase
+        font-size: 14px
+        font-weight: 700
+        &:not(:last-child)
+          margin-right: 6px
+          
+      .about
+        background-color: #81b3d2
+      .reserve
+        background-color: #766357
+
+      img
+        max-width: 136px
+        max-height: 92px
+
+
+@media ( max-width: 585px )
+  .form
+    .container
+      .form-flex
+        padding: 0 20px
+
+
+  .container
+    .sort
+      flex-direction: column
+      justify-content: space-between
+      .sort-arrows
+        justify-content: center
+        svg
+          &:first-child
+            margin-right: 7px
+
+      div
+        p
+          margin: 0
+          margin-bottom: 10px
+        ul
+          flex-direction: column
+          align-items: center
+          li
+            text-align: center
+            &:not(:last-child)
+              margin: 0
+              margin-bottom: 10px
+              
+    section.catalog
+      .catalog-items
+        .catalog-item
+          flex-direction: column
+          
+          .right
+            .stars
+              margin: 0
+              justify-content: center
+
+
+@media ( max-width: 480px )
+  .form
+    .container
+      .form-flex
+        flex-direction: column
+        .range
+          input
+            width: 50%
+
+  .container
+    section.catalog
+      .catalog-items
+        button
+          font-size: 10px
+          padding: 5px 14px
